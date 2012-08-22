@@ -105,8 +105,8 @@ endif;
       <?php endif; ?>
 	  
       <div class="wpsc_coupon">
-		<p><?php _e('Coupon code', 'tokokoo'); ?></p>
-		<span><?php _e('Enter your coupon code here.', 'tokokoo'); ?> :</span>
+		<h3><?php _e('Coupon code', 'tokokoo'); ?></h3>
+		<span><?php _e('Enter your coupon code', 'tokokoo'); ?> :</span>
         <span>
             <form  method="post" action="<?php echo get_option('shopping_cart_url'); ?>">
                <input type="text" name="coupon_num" id="coupon_num" value="<?php echo $wpsc_cart->coupons_name; ?>" />
@@ -116,8 +116,8 @@ endif;
       </div>
 	  
       <div class="wpsc_total_before_shipping">
-	      <p><?php _e('Cost before shipping:','tokokoo'); ?></p>
-	      <span class="wpsc_total_amount_before_shipping"><?php echo wpsc_cart_total_widget(false,false,false);?></span>
+	      <p><?php _e('Cost before shipping:  ','tokokoo'); ?>
+	      <span class="wpsc_total_amount_before_shipping"><?php echo wpsc_cart_total_widget(false,false,false);?></span></p>
       </div>
 	  
    <?php endif; ?>
@@ -349,7 +349,7 @@ endif;
        <div id="checkout_table_wrap">
 <?php ob_start(); ?>
 	
-   <table class='wpsc_checkout_table table-1' cellpadding="2" cellspacing="2" style='width: 90%;'>
+   <table class='wpsc_checkout_table table-1' cellpadding="2" cellspacing="2" style='width: 90%; margin-left: -10px;'>
       <?php $i = 0;
       while (wpsc_have_checkout_items()) : wpsc_the_checkout_item(); ?>
 
@@ -358,7 +358,7 @@ endif;
                //display headers for form fields ?>
                <?php if($i > 1):?>
                   </table>
-                  <table class='wpsc_checkout_table table-<?php echo $i; ?>' style='width:90%;'>
+                  <table class='wpsc_checkout_table table-<?php echo $i; ?>' style='width:90%; margin-left:-10px;'>
                <?php endif; ?>
 
                <tr <?php echo wpsc_the_checkout_item_error_class();?>>
