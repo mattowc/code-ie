@@ -591,10 +591,15 @@ border:0px !important;
 .menu-item-last span{
 	display: none;
 }
-
+/*
+Jonathon McDonald <jon@onewebcentric.com>
+*/
 @media screen and (max-width: 480px) {
 body {
-	background:url(../images/bg.jpg) no-repeat;
+background: #000 url(../images/bg.jpg) repeat-y;
+background-position:0; 
+width: 100%;
+-webkit-background-size: 1254px 2388px; 
 }
 }
 
@@ -611,9 +616,7 @@ img.alignright {
 	padding-bottom:5px;
 }
 
-/*
-Jonathon McDonald <jon@onewebcentric.com>
-*/
+
 .shopping-page {
 	color: lime;
 }
