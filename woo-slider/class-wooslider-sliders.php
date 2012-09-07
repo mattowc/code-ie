@@ -130,7 +130,7 @@ class WooSlider_Sliders {
 
 		$args = wp_parse_args( $args, $defaults );
 
-		$query_args = array( 'post_type' => 'attachment', 'post_mime_type' => 'image', 'post_parent' => intval( $args['id'] ), 'numberposts' => intval( $args['limit'] ) );
+		$query_args = array( 'post_type' => 'attachment', 'post_mime_type' => 'image', 'orderby' => 'menu_order', 'order' => 'ASC', 'post_parent' => intval( $args['id'] ), 'numberposts' => intval( $args['limit'] ) );
 		$attachments = get_posts( $query_args );
 
 		if ( ! is_wp_error( $attachments ) && ( count( $attachments ) > 0 ) ) {
