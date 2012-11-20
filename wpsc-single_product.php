@@ -37,7 +37,7 @@
 		<td>
 				<?php if ( wpsc_the_product_thumbnail() ) : ?>
 				<div class="imagecol">
-					<img class="product_image" id="product_image_<?php echo wpsc_the_product_id(); ?>" style="cursor: auto;" alt="<?php echo wpsc_the_product_title(); ?>" title="<?php echo wpsc_the_product_title(); ?>" src="<?php echo wpsc_the_product_thumbnail(460, 360); ?>"/>
+					<img class="product_image" id="product_image_<?php echo wpsc_the_product_id(); ?>" style="cursor: auto;" alt="<?php echo wpsc_the_product_title(); ?>" title="<?php echo wpsc_the_product_title(); ?>" src="<?php echo wpsc_the_product_thumbnail(200, 200); ?>"/>
 					<?php $array_image = tk_get_gallery_images(wpsc_the_product_id()); ?>
 						<?php if(count($array_image) > 1){ ?>
 						
