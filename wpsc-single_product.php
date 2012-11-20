@@ -46,7 +46,7 @@
 								<?php foreach($array_image as $imgThumb){ ?>
 									<?php if( $imgThumb->guid != $bg_product[0] ){ ?>		
 										<li class="image-item-carousel">
-												<img src="<?php echo wpsc_product_image( $imgThumb->ID,  75, 75 ); ?>" class="images-gallery-thumbnails" style="cursor: auto;" />
+												<img src="<?php echo wpsc_product_image( $imgThumb->ID,  75, 75 ); ?>" class="images-gallery-thumbnails" style="cursor: auto;" width="75" height="75" />
 										</li>
 									<?php } ?>
 								<?php } ?>
