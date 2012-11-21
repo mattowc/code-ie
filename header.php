@@ -25,9 +25,9 @@
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
     
    
-    <?php wp_head(); ?>
+    
    
-
+<?php wp_head(); ?>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery-ui.min.js"></script>
 
 <script type="text/JavaScript" src="<?php bloginfo('template_url'); ?>/js/jquery.mousewheel.js"></script>
