@@ -1395,5 +1395,8 @@ Jonathon McDonald <jon@onewebcentric.com>
 	margin-left: -10px;
 }
 a.continue_shopping {
-	float: right;
+	color: yellow !important;
+}
+a.go_to_checkout {
+	margin-left: 15px !important;
 }

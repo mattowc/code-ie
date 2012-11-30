@@ -88,7 +88,24 @@ function wpsc_add_to_cart() {
 
 	if ( is_object( $cart_item ) ) {
 		do_action( 'wpsc_add_to_cart', $product, $cart_item );
-		$cart_messages[] = str_replace( "[product_name]", $cart_item->get_title(), __( 'You just added "[product_name]" to your cart.', 'wpsc' ) );
+
+		// Get the cart item name
+		$primary_product_id = get_post_field( 'post_parent', $cart_item->product_id );
+        $title = get_post_field( 'post_title', $primary_product_id );
+
+        // Get the variations in the cart
+        $get_vars = wpsc_cart_item::refresh_variation_cache(); 
+
+        // Get this specific cart item variations & append it to the title
+        if ( isset( $get_vars[$cart_item->product_id] ) ) 
+        {
+        	ksort( $get_vars[$cart_item->product_id] );
+        	$vars   = implode( ', ', $get_vars[$cart_item->product_id] );
+        	$title .= ' - ' . $vars . '';
+        }
+
+        // Append it as a message
+		$cart_messages[] = str_replace( "[product_name]", $title, __( '"[product_name]" ADDED', 'wpsc' ) );
 	} else {
 		if ( $parameters['quantity'] <= 0 ) {
 			$cart_messages[] = __( 'Sorry, but you cannot add zero items to your cart', 'wpsc' );

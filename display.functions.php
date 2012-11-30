@@ -162,8 +162,9 @@ function fancy_notification_content( $cart_messages ) {
 	foreach ( (array)$cart_messages as $cart_message ) {
 		$output .= "<span>" . $cart_message . "</span><br />";
 	}
-	$output .= "<a href='" . get_option( 'shopping_cart_url' ) . "' class='go_to_checkout'>" . __( 'Go to Checkout', 'wpsc' ) . "</a>";
-	$output .= "<a href='#' onclick='jQuery(\"#fancy_notification\").css(\"display\", \"none\"); return false;' class='continue_shopping'>" . __( 'Continue Shopping', 'wpsc' ) . "</a>";
+	
+	$output .= "<a href='#' onclick='jQuery(\"#fancy_notification\").css(\"display\", \"none\"); return false;' class='continue_shopping'>" . __( 'CONTINUE SHOPPING', 'wpsc' ) . "</a>";
+	$output .= "<a href='" . get_option( 'shopping_cart_url' ) . "' class='go_to_checkout'>" . __( 'CHECKOUT', 'wpsc' ) . "</a>";
 	return $output;
 }
 
