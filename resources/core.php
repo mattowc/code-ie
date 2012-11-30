@@ -1375,7 +1375,7 @@
             $image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium');
             
             echo "\n".'<meta property="og:url" content="'.get_permalink($post->ID) .'" />';
-            echo "\n".'<meta property="og:description" content="'.$post->post_content.'" />';
+            echo "\n".'<meta property="og:description" content="'.strip_tags($post->post_content).'" />';
             echo "\n".'<meta property="og:image" content="'.$image_url[0].'" />'." \n";
         }
     }

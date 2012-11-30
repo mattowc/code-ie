@@ -122,7 +122,7 @@ jQuery().ready(function() {
                                         <?php while(have_posts()): the_post(); ?>
                                                      <a href="<?php echo wpsc_the_product_permalink(); ?>"  rel='lightbox' title="<?php echo wpsc_the_product_title(); ?>">                                               
                                                     <?php if(wpsc_the_product_thumbnail()) :?>
-                                                            <img class="cloudcarousel" src="<?php echo wpsc_the_product_thumbnail(100, 100); ?>" alt="" />
+                                                            <img class="cloudcarousel" src="<?php echo wpsc_the_product_thumbnail(200, 200); ?>" alt="" />
 															</a>
                                                     <?php else: ?>
                                                             <img class="no-image" id="product_image_<?php echo wpsc_the_product_id(); ?>" alt="" title="" src="<?php echo WPSC_CORE_THEME_URL; ?>wpsc-images/noimage.png" width="100" height="100" /><p>															<?php echo wpsc_the_product_title(); ?></p>

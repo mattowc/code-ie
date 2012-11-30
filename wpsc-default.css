@@ -395,17 +395,19 @@ table.list_productdisplay .quantity_container {
 }
 
 #content input.wpsc_buy_button{
-background:url(wpsc-images/add-to-cart.png) no-repeat scroll 0 5px transparent;
 	font-size: 12px;
-	width:171px;
-	height:54px;
+	background: url('wpsc-images/cart-checkout-sprite.png') no-repeat;
+	background-position: -0px -155px; 
+	width: 171px; 
+	height: 47px;
 }
 
 #content input.wpsc_buy_button:hover{
-background:url(wpsc-images/add-to-cart-hover.png) no-repeat scroll 0 5px transparent;
+	background: url('wpsc-images/cart-checkout-sprite.png') no-repeat;
 	font-size: 12px;
-	width:171px;
-	height:54px;
+	background-position: -0px -108px; 
+	width: 171px; 
+	height: 47px;
 }
 table.list_productdisplay .wpsc_buy_button_container {
 	display:inline;
@@ -695,24 +697,27 @@ span.rating_saved{
 } 
 /*-----FANCY NOTIFICATION STYLING-----*/
 #fancy_notification{
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: #000000;
-	border: 4px solid #000000;
-	display: none;
-	height: auto;
-	z-index: 9;
-	opacity: .88;
+  opacity:    0.88; 
+  background: #000; 
+  width:      100%;
+  height:     100%; 
+  z-index:    10;
+  top:        0 !important; 
+  left:       0 !important; 
+  position:   fixed; 
+  display: none;
 }
 #fancy_notification #loading_animation{
 	display: none;
 }
 #fancy_notification #fancy_notification_content{
 	display: none;
-	width: 300px;
 	padding: 8px;
-	height: auto;
+	height: 100%;
+	top: 50%;
+	left: 40%;
+	margin-top: -120px;
+	position: absolute;
 	text-align: left;
 	margin: 0 !important;
 }
@@ -1345,16 +1350,18 @@ ul.relationproducts li .currentprice
 
  input.wpsc_checkout_button
 {
-background:url(wpsc-images/checkout.png) no-repeat scroll 0 5px transparent;
+	background: url('wpsc-images/cart-checkout-sprite.png') no-repeat;
 	font-size: 12px;
-	width:171px;
-	height:54px;
+	background-position: -0px -54px; 
+	width: 178px; 
+	height: 54px;
 }
  input.wpsc_checkout_button:hover{
-background:url(wpsc-images/checkout-hover.png) no-repeat scroll 0 5px transparent;
+	background: url('wpsc-images/cart-checkout-sprite.png') no-repeat;
 	font-size: 12px;
-	width:171px;
-	height:54px;
+	background-position: -0px -0px;
+	width: 178px; 
+	height: 54px;
 }
 #checkout_table_wrap {
 	width: 100%;

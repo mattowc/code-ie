@@ -533,11 +533,11 @@ img{
 	margin:18px 0 0 0;
 	color:#fffff8;
 }
-.email_field
+.eemail_textbox_class
 {
 	background:url(../images/field.png) no-repeat top left;
 	border:0;
-	width:143px;
+	width:143px !important;
 	height:21px;
 	line-height:21px;
 	padding:0 0 0 5px;
@@ -556,7 +556,7 @@ img{
 	margin-left:-5px;
 	cursor:pointer
 }
-.emailnewsletter_submit
+.eemail_textbox_button
 {
 	background:url(../images/arrow.png) no-repeat top left;
 	border:0;
@@ -619,4 +619,15 @@ img.alignright {
 
 .shopping-page {
 	color: lime;
+}
+
+.eemail_button
+{
+	float: left;
+	margin-top: 17px;
+}
+
+.eemail_textbox
+{
+	float: left;
 }
